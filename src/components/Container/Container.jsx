@@ -1,9 +1,13 @@
-import React from 'react'
+// Container.jsx
+import React from 'react';
+import styles from "./Container.module.css";
 
-const Container = () => {
+function Container({ children }) {
     return (
-        <div>Container</div>
-    )
+        <div className={styles.container}>
+            {children}
+        </div>
+    );
 }
 
-export default Container
+export default Container;

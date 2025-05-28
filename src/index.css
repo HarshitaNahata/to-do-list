@@ -2,6 +2,8 @@
 
 :root {
   font-family: 'Work Sans', sans-serif;
+  position: relative;
+  height: 100vh;
 }
 
 * {

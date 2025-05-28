@@ -1,12 +1,10 @@
 import { useState } from 'react';
-
+import { Container, Typography } from './components';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-      Hello World!
-    </div>
+    <Container><Typography fontSize={24}>Hello World!</Typography></Container>
 
   )
 }
