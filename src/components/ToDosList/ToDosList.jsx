@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Card from '../Card/Card';
 
 function ToDosList() {
-  return (
-    <div>ToDosList</div>
-  )
+    return (
+        <div><Card /></div>
+    )
 }
 
 export default ToDosList
