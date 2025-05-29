@@ -1,12 +1,17 @@
 import { useState } from 'react';
-import { Container, Typography } from './components';
+import { Container, Title, Typography } from './components';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Container><Typography fontSize={24}>Hello World!</Typography></Container>
+    <Container>
+      <Title />
+      <Typography fontSize={24} bold marginTop={"38px"}>
+        List of Tasks
+      </Typography>
+    </Container>
 
-  )
+  );
 }
 
 export default App
