@@ -1,19 +1,15 @@
 import React from 'react';
 import styles from './Card.module.css';
-import Typography from '../Typography/Typography';
-import Checkbox from '../Checkbox/Checkbox';
+// import Typography from '../Typography/Typography';
+// import Checkbox from '../Checkbox/Checkbox';
+// import ActionButton from '../ActionButton/ActionButton';
+// import pencil from '../../assets/pencil.svg';
+// import trash from '../../assets/trash.svg';
 
-function Card() {
+function Card({ children }) {
     return (
         <div className={styles.card}>
-            <div className={styles.taskName}>
-                <Checkbox />
-                <Typography fontSize={24}>Do the dishes</Typography>
-            </div>
-            <div className={styles.actionButton}>
-                <button>+</button>
-                <button>+</button>
-            </div>
+            {children}
         </div>
     )
 }
