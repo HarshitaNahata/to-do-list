@@ -6,9 +6,9 @@ import styles from './Card.module.css';
 // import pencil from '../../assets/pencil.svg';
 // import trash from '../../assets/trash.svg';
 
-function Card({ children }) {
+function Card({ children, col }) {
     return (
-        <div className={styles.card}>
+        <div className={col ? styles.cardCol : styles.card} >
             {children}
         </div>
     )

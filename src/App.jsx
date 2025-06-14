@@ -10,12 +10,12 @@ function App() {
   return (
     <Container>
       <Title />
-      <Typography fontSize={24} bold marginTop={"38px"}>
+      <Typography fontSize={24} bold marginTop={"38px"} marginBottom={"17px"}>
         List of Tasks
       </Typography>
       <Container flex>
         <ToDosList />
-        <Card>
+        <Card col>
           <Typography fontSize={24} bold >
             List of Tasks
           </Typography>
