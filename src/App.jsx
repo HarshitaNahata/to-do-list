@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { Container, Title, Typography, Card, ToDosList, Form, ProgressBar } from './components';
 import CategoriesList from './components/CategoriesList/CategoriesList';
+import { useSelector } from 'react-redux';
 // import ToDosList from './components/ToDosList/ToDosList';
 // import Card from './components/Card/Card';
 // import ProgressBar from './components/ProgressBar/ProgressBar'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { todos } = useSelector((state) => state.todos);
+  console.log(todos);
 
   return (
     <Container>
