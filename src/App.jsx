@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Container, Title, Typography, Card, ToDosList, Form, ProgressBar } from './components';
+import CategoriesList from './components/CategoriesList/CategoriesList';
 // import ToDosList from './components/ToDosList/ToDosList';
 // import Card from './components/Card/Card';
 // import ProgressBar from './components/ProgressBar/ProgressBar'
@@ -26,6 +27,7 @@ function App() {
           <Form />
         </Container>
       </Container>
+      <CategoriesList />
     </Container>
 
   );

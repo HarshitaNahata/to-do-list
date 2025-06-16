@@ -9,12 +9,22 @@ function Dropdown({ setTaskData, taskData }) {
     return (
         <div className={styles.dropdown}>
             <div className={styles.dropdownHeader} onClick={() => setOpenDropdown(!openedDropdown)}>
-                <p>Select a category</p> <img src={arrow} alt="arrow" />
+                <p>{taskData.category ? taskData.category : "Select a category"}</p>
+                <img src={arrow} alt="arrow" />
             </div>
             {openedDropdown && (
                 <div className={styles.dropdownContent}>
                     {categories.map((category) => (
-                        <p key={category.name} onClick={(e) => setTaskData({ ...taskData, category: e.target.innerHtml })}>{category.name}</p>
+                        <p
+                            key={category.name}
+                            onClick={(e) => {
+                                setTaskData({ ...taskData, category: e.target.innerHTML });
+                                setOpenDropdown(false);
+                            }}
+                        >
+                            {category.name}
+                        </p>
+
                     ))}
                 </div>
             )}
