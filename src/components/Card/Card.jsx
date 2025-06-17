@@ -6,9 +6,9 @@ import styles from './Card.module.css';
 // import pencil from '../../assets/pencil.svg';
 // import trash from '../../assets/trash.svg';
 
-function Card({ children, col }) {
+function Card({ children, col, handleClick }) {
     return (
-        <div className={col ? styles.cardCol : styles.card} >
+        <div onClick={() => (handleClick ? handleClick() : null)} className={col ? styles.cardCol : styles.card} >
             {children}
         </div>
     )

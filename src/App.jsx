@@ -7,16 +7,15 @@ import { useSelector } from 'react-redux';
 // import ProgressBar from './components/ProgressBar/ProgressBar'
 
 function App() {
-  const { todos } = useSelector((state) => state.todos);
+  const { todos, category } = useSelector((state) => state.todos);
   console.log(todos);
 
   return (
     <Container>
       <Title />
       <Typography fontSize={24} bold marginTop={"38px"} marginBottom={"17px"}>
-        List of Tasks
+        List of <span style={{ textTransform: "capitalize" }}>{category}</span> Tasks
       </Typography>
-
       <Container flexrow>
         <ToDosList />
         <Container flexcol>
