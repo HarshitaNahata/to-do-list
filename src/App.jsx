@@ -22,7 +22,7 @@ function App() {
             <Typography fontSize={24} bold >
               List of Tasks
             </Typography>
-            <ProgressBar progress={"60%"} />
+            <ProgressBar />
           </Card>
           <Form />
         </Container>

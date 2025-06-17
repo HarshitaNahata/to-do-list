@@ -5,9 +5,17 @@ import Card from '../Card/Card';
 import Button from '../Button/Button';
 import Dropdown from '../Dropdown/Dropdown';
 import { useState } from 'react';
+import { addTodo } from '../../reducer/todosSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 function Form() {
+    const dispatch = useDispatch();
+    const { todos } = useSelector((state) => state.todos)
     const [taskData, setTaskData] = useState({ name: "", category: "" });
+    const handleAddTodo = () => {
+        const todosLength = todos.length;
+        dispatch(addTodo({ ...taskData, done: false, id: todosLength + 1 }))
+    }
     return (
         <div className={styles.form}>
             <Typography fontSize={24} bold>
@@ -27,7 +35,7 @@ function Form() {
                     <Dropdown taskData={taskData} setTaskData={setTaskData} />
                 </div>
 
-                <Button />
+                <Button handleAddTodo={() => handleAddTodo()} />
             </Card>
         </div>
     )

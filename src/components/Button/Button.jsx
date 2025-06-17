@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Button.module.css';
 
-function Button() {
+function Button({ handleAddTodo }) {
     return (
-        <button className={styles.button}>Add</button>
+        <button onClick={() => handleAddTodo()} className={styles.button}>Add</button>
     )
 }
 
