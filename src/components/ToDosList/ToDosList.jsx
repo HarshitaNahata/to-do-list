@@ -10,11 +10,12 @@ function ToDosList() {
     const displayedTodos = todos.filter((todo) => todo.category === category);
     return (
         <div className={styles.todoList}>
-            {displayedTodos > 0 ? displayedTodos.map((todo) => (
+            {displayedTodos.length > 0 ? (displayedTodos.map((todo) => (
                 <Card key={todo.id}>
                     <TodoItem todo={todo} />
                 </Card>
-            )) : <Typography>No tasks In This Category</Typography>
+            ))
+            ) : (<Typography>No tasks In This Category</Typography>)
             }
         </div>
     )
