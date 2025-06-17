@@ -7,8 +7,7 @@ import { useSelector } from 'react-redux';
 // import ProgressBar from './components/ProgressBar/ProgressBar'
 
 function App() {
-  const { todos, category } = useSelector((state) => state.todos);
-  console.log(todos);
+  const { category } = useSelector((state) => state.todos);
 
   return (
     <Container>

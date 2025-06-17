@@ -6,12 +6,12 @@ import styles from './TodoItem.module.css';
 import pencil from '../../assets/pencil.svg';
 import trash from '../../assets/trash.svg';
 
-function TodoItem() {
+function TodoItem({ todo }) {
     return (
         <>
             <div className={styles.taskName}>
-                <Checkbox />
-                <Typography fontSize={24}>Do the dishes</Typography>
+                <Checkbox todo={todo} />
+                <Typography fontSize={24}>{todo.name}</Typography>
             </div>
             <div className={styles.actionButtons}>
                 <ActionButton icon={pencil} handleClick={() => null} />
