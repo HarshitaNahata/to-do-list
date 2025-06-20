@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Checkbox from '../Checkbox/Checkbox';
 import Typography from '../Typography/Typography';
 import ActionButton from '../ActionButton/ActionButton';
-import styles from './toDoItem.module.css';
+import styles from './ToDoItem.module.css';
 import pencil from '../../assets/pencil.svg';
 import trash from '../../assets/trash.svg';
 import check from '../../assets/check.svg';

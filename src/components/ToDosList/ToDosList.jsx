@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../Card/Card';
 import styles from './ToDosList.module.css'
-import ToDoItem from '../toDoItem/toDoItem';
+import ToDoItem from '../ToDoItem/ToDoItem';
 // import { useSelector } from 'react-redux';
 import Typography from '../Typography/Typography';
 import { useFilterTodos } from '../../hooks/useFilterTodos';
