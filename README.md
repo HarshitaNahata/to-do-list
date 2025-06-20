@@ -1,12 +1,88 @@
-# React + Vite
+# 📝 To‑Do List App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean To‑Do List web app built using **React** and **Vite**. This app allows users to add and delete tasks, with automatic data persistence using browser `localStorage`.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [to-do-list-six-beta-16.vercel.app](https://to-do-list-six-beta-16.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Add new tasks
+- 🗑️ Delete existing tasks
+- 💾 Persistent storage with `localStorage`
+- 🎨 Minimal and responsive UI
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Frontend framework
+- **Vite** – Fast build tool and development server
+- **CSS** – Basic styling
+- **localStorage** – For saving tasks in the browser
+- **Vercel** – Deployment platform
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/HarshitaNahata/to-do-list.git
+cd to-do-list
+
+2. Install dependencies
+npm install
+# or
+yarn install
+3. Start the development server
+bash
+Copy
+Edit
+npm run dev
+# or
+yarn dev
+Open http://localhost:5173 to view it in the browser.
+
+📦 Build for Production
+bash
+Copy
+Edit
+npm run build
+# or
+yarn build
+The final output will be in the dist/ folder, ready to be deployed.
+
+📁 Project Structure
+pgsql
+Copy
+Edit
+to-do-list/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+🧑‍💻 Author
+Harshita Nahata
+GitHub: @HarshitaNahata
+
+📝 License
+This project is licensed under the MIT License.
+
+📌 Note
+This project is deployed using Vercel. For SPA support, Vercel automatically handles routing correctly, but if needed, you can add a vercel.json for custom rewrites.
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you'd like to add badges, a dark mode, or task editing features in the future!
