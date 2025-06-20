@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../Card/Card';
-import styles from './ToDosList.module.css'
-import TodoItem from '../TodoItem/TodoItem';
+import styles from './toDosList.module.css'
+import ToDoItem from '../toDoItem/toDoItem';
 // import { useSelector } from 'react-redux';
 import Typography from '../Typography/Typography';
 import { useFilterTodos } from '../../hooks/useFilterTodos';
@@ -14,7 +14,7 @@ function ToDosList() {
         <div className={styles.todoList}>
             {displayedTodos.length > 0 ? (displayedTodos.map((todo) => (
                 <Card key={todo.id}>
-                    <TodoItem todo={todo} />
+                    <ToDoItem todo={todo} />
                 </Card>
             ))
             ) : (<Typography>No tasks In This Category</Typography>)

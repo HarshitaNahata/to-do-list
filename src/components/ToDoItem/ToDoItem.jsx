@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import Checkbox from '../Checkbox/Checkbox';
 import Typography from '../Typography/Typography';
 import ActionButton from '../ActionButton/ActionButton';
-import styles from './TodoItem.module.css';
+import styles from './toDoItem.module.css';
 import pencil from '../../assets/pencil.svg';
 import trash from '../../assets/trash.svg';
 import check from '../../assets/check.svg';
 import { useDispatch } from 'react-redux';
 import { deleteTodo, updateTodo } from '../../reducer/todosSlice';
 
-function TodoItem({ todo }) {
+function ToDoItem({ todo }) {
     const [editingMode, setEditingMode] = useState(false);
     const [newTodo, setNewTodo] = useState(todo);
     const dispatch = useDispatch();
@@ -36,4 +36,4 @@ function TodoItem({ todo }) {
     )
 }
 
-export default TodoItem
+export default ToDoItem
